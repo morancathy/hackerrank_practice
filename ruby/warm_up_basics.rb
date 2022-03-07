@@ -20,4 +20,19 @@ def serial_average(num)
    end
   
   p serial_average('001-12.43-56.78')
-  #--------------------------------------------
+
+#--------------------------------------------
+#return hash where keys represent the words in the string
+#values represent how many times that key occurs
+sentence = "Once upon a time in a land far far away"
+
+def word_count(string)
+    words = string.split(" ")
+    count_hash = Hash.new(0)
+    words.each do |word|   
+        count_hash[word] += 1   
+    end                         
+    count_hash
+end
+
+p word_count(sentence)
