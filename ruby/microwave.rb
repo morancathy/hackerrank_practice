@@ -29,7 +29,4 @@ class Microwave
     end
 end
 
-# hotpockets = Microwave.new
-# p hotpockets.timer(256)
-
 p Microwave.new(1001).timer

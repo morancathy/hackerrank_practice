@@ -5,8 +5,8 @@
 def miniMaxSum(arr)    
     def min(array) 
         min = array.sort[0...-1]
-        min.inject(:+)        
-    endq
+        min.inject(:+)        # inject accumulator 
+    end
     def max(array) 
         max = array.sort.reverse[0...-1]
         max.inject(:+)    
