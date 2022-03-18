@@ -1,7 +1,7 @@
 # Microwave timers are smart enough to know that when you press 90 for seconds, you mean '01:30',
 # We want to have a "smart display" that will convert this to the lowest form of minutes and seconds, rather than leaving it as 90 seconds.
 # Build a class that accepts buttons entered and converts them to the proper display panel time.
-class Microwave
+class MicrowavedFood
   def initialize(num)
     @num = num
   end
@@ -9,7 +9,7 @@ class Microwave
     def timer
       if @num == 100
         "01:00" 
-      elsif @num <= 100        
+      elsif @num < 100        
         minutes = @num / 60
         seconds = @num % 60
         "#{sprintf('%02.0f', minutes)}:#{sprintf('%02.0f',seconds)}"

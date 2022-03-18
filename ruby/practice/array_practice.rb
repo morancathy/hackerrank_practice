@@ -20,3 +20,12 @@ def evens_and_odds(numbers)
  evens_and_odds(arr)
  p evens_and_odds1(arr)
  #---------------------------------------------------
+ #add numbers in array together
+def add_array(arr)
+   tot = 0
+   arr.each { |num| tot += num}
+   tot
+end 
+
+p add_array([1,2,3,4,5])
+ #---------------------------------------------------
